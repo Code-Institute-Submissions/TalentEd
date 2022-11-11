@@ -20,4 +20,10 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
+<<<<<<< HEAD
 ]
+=======
+    path('', include('profiles.urls'), name='profiles_urls'),
+    path("accounts/", include("allauth.urls")),
+]
+>>>>>>> e97f9d0 (Create email and likes)
