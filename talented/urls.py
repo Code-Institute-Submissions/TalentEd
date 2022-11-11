@@ -1,4 +1,4 @@
-"""talented URL Configuration
+"""codestar URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -16,14 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("", include("profiles.urls"), name="profiles-urls"),
     path('summernote/', include('django_summernote.urls')),
-<<<<<<< HEAD
-]
-=======
-    path('', include('profiles.urls'), name='profiles_urls'),
     path("accounts/", include("allauth.urls")),
 ]
->>>>>>> e97f9d0 (Create email and likes)
