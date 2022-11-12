@@ -1,32 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
 body {
-    background-color: #F9FAFC;
+    font-family: 'Merienda', cursive;
+
 }
 
-.brand {
-    font-family: Lato, sans-serif;
+.logo {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
+    color: #497174;
 }
 
-.red-o {
-    color: #E84610;
+.logo-e {
+    color: #EB6440;
 }
+
 
 .thin {
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .light-bg {
-    background-color: #fff;
+    background-color: #EFF5F5;
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #497174;
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #EFF5F5;
 }
 
 .card {
@@ -43,11 +46,12 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color:
+        #EB6440;
 }
 
 .author {
-    color: white;
+    color: #EFF5F5;
     margin: 4px;
     text-transform: uppercase;
 }
@@ -62,8 +66,8 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
-    color: white;
+    background-color: #497174;
+    color: #EFF5F5;
     position: relative;
 }
 
@@ -79,7 +83,7 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: #497174;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
@@ -88,12 +92,12 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #497174;
 }
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #EB6440;
 }
 
 .post-title {
@@ -103,40 +107,62 @@ body {
 
 .post-subtitle {
     margin-left: 5%;
-    color: lightgray;
+    color: #EFF5F5;
 }
 
 .btn-signup {
-    background-color: #23BBBB;
-    color: #fff;
+    background-color: #EB6440;
+    color: #EFF5F5;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
+    background-color: #EFF5F5;
+    color: #EB6440;
 }
 
 .link {
-    color: #23BBBB;
+    color: #EB6440;
     text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color: #497174;
     text-decoration: underline;
 }
 
 .btn-like {
-    color: #E84610;
+    color: #EB6440;
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: #EB6440;
     background: transparent;
     border: none;
+}
+
+.navbar {
+    background-color: #D6E4E5;
+}
+
+.container {
+    text-align: center;
+}
+
+.footer {
+    background-color: #D6E4E5;
+}
+
+#made-by {
+    color: #EB6440;
+    font-weight: bold;
+}
+
+.btn-footer {
+    background-color: #497174;
+
 }
