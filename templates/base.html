@@ -56,6 +56,26 @@
             </div>
         </div>
     </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content logout-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logoutModalLabel">Logout</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to logout?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="{% url 'account_logout' %}">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row">
@@ -76,40 +96,22 @@
         {% endblock content %}
     </main>
 
+
     <!-- Footer -->
     <footer class="footer mt-auto py-3 footer-bg">
         <p id="made-by" class="m-2 text-center">Made for the talented ones</p>
         <p id="made-by" class="m-2 text-center"><span class="logo">Talent<span class="logo-e">E</span>d</span></p>
-        <div class="container p-4 pb-0">
-            <!-- Section: Social media -->
-            <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn text-white btn-floating m-1 btn-footer" href="facebook.com"><i
-                        class="fab fa-facebook-f"></i></a>
+        <p class="m-0 text-center">
+            <a href="mailto:soyaronur@gmail.com"><i class="fas fa-envelope social-link ms-3 fs-2 footer-btn"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter social-link ms-3 fs-2 footer-btn"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook social-link ms-3 fs-2 footer-btn"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram social-link ms-3 fs-2 footer-btn"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin social-link ms-3 fs-2 footer-btn"></i></a>
 
-                <!-- Twitter -->
-                <a class="btn text-white btn-floating m-1 btn-footer" href="twitter.com"><i
-                        class="fab fa-twitter"></i></a>
-
-                <!-- Google -->
-                <a class="btn text-white btn-floating m-1 btn-footer" href="google.com"><i
-                        class="fab fa-google"></i></a>
-
-                <!-- Instagram -->
-                <a class="btn text-white btn-floating m-1 btn-footer" href="instagram.com"><i
-                        class="fab fa-instagram"></i></a>
-
-                <!-- Linkedin -->
-                <a class="btn text-white btn-floating m-1 btn-footer" href="linkedin.com"><i
-                        class="fab fa-linkedin-in"></i></a>
-                <!-- Github -->
-                <a class="btn text-white btn-floating m-1 btn-footer" href="github.com"><i
-                        class="fab fa-github"></i></a>
-            </section>
-            <!-- Section: Social media -->
-        </div>
-        <!-- Grid container -->
+        </p>
     </footer>
+
+
     <script>
         setTimeout(function () {
             let messages = document.getElementById('msg');

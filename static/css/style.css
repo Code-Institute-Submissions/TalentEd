@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Merienda', cursive;
-
 }
 
 .logo {
@@ -11,10 +10,60 @@ body {
     color: #497174;
 }
 
+.home-btn {
+    margin-top: 100px;
+}
+
+.intro-msg {
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+.btn-home {
+    background-color: #497174;
+    color: #EFF5F5;
+    margin-right: 50px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.btn-home:hover,
+.btn-home:active {
+    background-color: #EB6440;
+    color: #D6E4E5;
+}
+
+
+
+.btn-signup1 {
+    background-color: #497174;
+    color: #EFF5F5;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+
 .logo-e {
     color: #EB6440;
 }
 
+.btn-signup {
+    background-color: #6E5678;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.home-video {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.video {
+    width: 60%;
+    height: 500px;
+}
 
 .thin {
     font-weight: 500;
@@ -162,7 +211,58 @@ body {
     font-weight: bold;
 }
 
-.btn-footer {
-    background-color: #497174;
+.footer-btn {
+    color: #497174;
 
+}
+
+.email-logout {
+    text-decoration: none;
+    color: #EB6440;
+}
+
+.btn-login {
+
+    background-color: #EB6440;
+    color: #EFF5F5;
+    margin-right: 50px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.card-home {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #D6E4E5;
+    text-align: ;
+}
+
+
+.btn-clp {
+    text-decoration: none;
+    color: #497174;
+}
+
+.btn-clp:hover {
+    color: #EB6440;
+}
+
+.about-head {
+    color: #EB6440;
+
+}
+
+.link-btn {
+    text-decoration: none;
+    color: #EB6440;
+}
+
+
+
+/* Medium devices (tablets, 768px and less) */
+@media screen and (max-width: 768px) {
+    .card-home {
+        width: 100%;
+    }
 }

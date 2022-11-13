@@ -8,9 +8,12 @@ from .forms import CommentForm
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
-    template_name = "index.html"
+    template_name = "talents.html"
     paginate_by = 6
 
+def index(request):
+    """Views for home page"""
+    return render(request, 'index.html')
 
 class PostDetail(View):
 
@@ -64,6 +67,7 @@ class PostDetail(View):
                 "liked": liked
             },
         )
+
 
 
 class PostLike(View):
